@@ -1,0 +1,50 @@
+  variable
+   datatype- number
+   loop
+   
+1. find square of given number
+  input = number
+  logic--
+     result = number*number
+  output
+
+
+2.time---
+-------input = time 
+-------logic-- 
+--------if time is 8:00 to 10:00, breakfast time
+--------if time is 13:00 to 15:00, lunch time
+--------if time is 19:00 to 20:00, dinner time
+--------else, nothing
+-------output = breakfast, lunch, dinner 
+
+3. number is even or odd?
+--------input = n is a number
+--------if n is divisible by 2, it is true
+--------else it is odd
+--------output = true/false
+
+
+4.number or string is palindrome?
+    inuput = Number/string
+    logic--
+        reverse the input and save input as result
+        if result = input , true/it is palindrome
+        else, false/ not a palindrome
+    output = true/false
+
+5. 10th number of fibonacci series
+    input = 1
+    logic--
+         count from 0
+         new-number = add last number with current number
+         increment count by 1, count = count + 1
+         stop when reaches 10
+         return = last number
+         output= last number
+
+    var variable = n
+        count = 0
+        count + 1
+    for (var  i = 0, i < 10; i++)
+    output
