@@ -4,20 +4,21 @@
         <title></title>
         <link rel="stylesheet" href="Style.css"/>
         <link rel="stylesheet" href="style1.css"/>
+        <link rel="stylesheet" href="flex.css"/>
 
     </head> 
     <body>
         <div>
-            <div style= 'background-color: aqua;'>
-                <p style='color: green; background-color: aqua;'>Subscribe</p>
+            <div class="flex-div" style= 'background-color: aqua;'>
+                <p>Subscribe</p>
                 <h2>Large</h2>
                 <img src="#"alt="search icon">
                 <button id="signup-button">Sign up</button>
             </div>
 
-            <div style= 'width: 1000px;'>
+            <div class="flex-div">
 
-                <p class="nav-link-item link-element">World</p>
+                <p class="nav-link-item">World</p>
                 <p class="nav-link-item">U.S.</p>
                 <p class="nav-link-item">Techonology</p>
                 <p class="nav-link-item">Design</p>
@@ -32,33 +33,34 @@
             
             </div>
 
-            <div>
-                <h1>Title of a longer featured blog post</h1>
-                <p>Multiple lines of text that form the lede, informing new 
-                    readers quickly and efficiently about what's most interesting 
-                    in this post's contents.</p>
-                <p>Continue reading...</p>
+            <div class="flex-div2" style= "color: blanchedalmond; background-color: black;">
+                <h1>Title of a longer 
+                    featured blog post</h1>
+                <p>Multiple lines of text that form the lede,
+                     informing new readers quickly and efficiently about what's most
+                     interesting in this post's contents.</p>
+                <p class="link-element">Continue reading...</p>
             </div>
 
-            <div>
+            <div class="flex-div2">
                 <div>
-                    <p>World</p>
-                    <h3>Featured post</h3>
+                    <p class="link-element">World</p>
+                    <h3>Featured post </h3>
                     <p>Nov 12</p>
                     <p>This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-                    <p>Continue reading</p>
+                    <p class="link-element">Continue reading</p>
                     <img src="#"alt="Thumbnail">
                 </div>
                 <div>
-                    <p>Design</p>
+                    <p style="color: green;">Design</p>
                     <h3>Post</h3>
                     <p>Nov 11</p>
                     <p>This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-                    <p>Continue reading</p>
+                    <p class="link-element">Continue reading</p>
                     <img src="#"alt="Thumbnail">
                 </div>
             </div>
-            <div>
+            <div class="flex-div2">
                 <h2>From the Firehose</h2>
                 <h1>Sample blog post</h1>
                 <p>January 1, 2014 by Mark</p>
@@ -72,7 +74,7 @@
                 <p>Etiam porta sem malesuada magna mollis euismod. Cras mattis consectetur purus sit amet fermentum.
                     Aenean lacinia bibendum nulla sed consectetur.</p>
              </div>
-             <div>
+             <div class="flex-div2">
                 <h2>Heading</h2>
                  <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, 
                      eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, 
@@ -84,7 +86,7 @@
                     Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, 
                     ut fermentum massa.</p>      
              </div>
-             <div>
+             <div class="flex-div2">
                  <h3>Sub-heading</h3>
                  <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
                      Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, 
@@ -102,13 +104,13 @@
                  </ol>
                  <p>Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis</p>  
              </div>
-             <div>
+             <div class="flex-div2">
                  <h2>About</h2>
                  <p>Etiam porta sem malesuada magna mollis euismod. Cras mattis consectetur purus sit amet fermentum. 
                      Aenean lacinia bibendum nulla sed consectetur.</p>
              </div>
-             <div>
-                <h2>Archives</h2>
+             <div class="flex-div2 link-element">
+                <h2 style= "color: black;">Archives</h2>
                 <p>March 2014</p>
                 <p>February 2014</p>
                 <p>January 2014</p>
@@ -122,13 +124,13 @@
                 <p>May 2013</p>
                 <p>April 2013</p>
              </div>
-             <div>
-                 <h2>Elsewhere</h2>
+             <div class="flex-div2 link-element">
+                 <h2 style= "color: black;" >Elsewhere</h2>
                  <p>Github</p>
                  <p>Twitter</p>
                  <p>Facebook</p>
              </div>
-             <div>
+             <div class="flex-div2">
                  <h2>Another blog post</h2>
                  <p>December 23, 2013 by Jacob</p>
                  <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
@@ -141,7 +143,7 @@
                 <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
                      Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
              </div>
-             <div>
+             <div class="flex-div2">
                  <h2>New feature</h2>
                  <p>December 14, 2013 by Chris</p>
                  <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
@@ -158,12 +160,12 @@
                 <p>Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue.</p>
              </div>
              <div>
-                 <button>Older</button>
+                 <button class="link-element">Older</button>
                  <button>Newer</button>
              </div>
              <div>
                  <p>Blog template built for Bootstrap by @mdo.</p>
-                 <p>Back to top</p>
+                 <p class="link-element">Back to top</p>
              </div>
             
         </div>
