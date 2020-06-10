@@ -8,10 +8,10 @@
      result = number*number
   output
 
-var number = n
-var n = 5
-var number = n*n
-console.log(number)
+   var number = n
+   var n = 5
+   var number = n*n
+   console.log(number)
 
 
 2.time---
@@ -22,12 +22,28 @@ console.log(number)
 --------if time is 19:00 to 20:00, dinner time
 --------else, nothing
 -------output = breakfast, lunch, dinner 
+    
+
+
+
 
 3. number is even or odd?
 --------input = n is a number
 --------if n is divisible by 2, it is true
 --------else it is odd
 --------output = true/false
+
+
+var number = n;
+var n = 11;
+
+if ( n % 2 == 0) {
+console.log("even");
+}
+else {console.log("odd");}
+
+
+
 
 
 4.number or string is palindrome?
@@ -53,3 +69,44 @@ console.log(number)
         count + 1
     for (var  i = 0, i < 10; i++)
     output
+
+6. Find the vowels and consonants
+       input:- varible 
+       output:- variable
+
+     STEPS:-
+        1) Select any "name"
+        2) declare the vowels
+        3) go through the given name
+        4) count the vowels and icrement by 1
+        5) count the consonants and increment by 1
+
+         var name = "priyanka";
+         var vowels_list = 'aeiou';
+         var vowels_count = 0;
+         var conso_count = 0;
+
+         for (var i = 0; i <= name.lenght; i++) {
+
+          if (vowels_list.indexof(name[i]) !== -1){vowels_count + 1;}
+          else {conso_count+1;}
+         }
+
+         console.log( "vowel", vowel_count);
+        console.log("conso", conso_count);
+
+
+7. Write multiple of 2 upto 10
+
+        var num = 2
+        for (var i=0; i<=10; i++)
+        console.log(num*i)
+ 
+
+
+
+var name = ["priyanka", "lizzette", "jessica", "jovita", "marisol"
+];
+
+for (var i=0; i<name.length; i++)
+{console.log(name[i].length)}
