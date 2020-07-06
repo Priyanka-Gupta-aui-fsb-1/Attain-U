@@ -104,6 +104,14 @@ concatInt(
 
 
 QUESTION 7) SQUARES AND CUBES
+   
+   function squares&cubes(a, b){
+     if var a = a^2 & var b = b^3, console.log(true);
+     else console.log(false);
+     }
+
+     squares&cubes(4,8);
+     
 
 
 

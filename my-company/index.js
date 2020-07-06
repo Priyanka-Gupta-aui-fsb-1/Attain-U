@@ -1,7 +1,12 @@
 var express = require('express');
 var app = express();
 var path = require('path');
-app.use (express.static('public'))
+const { nextTick } = require('process');
+const { clearScreenDown } = require('readline');
+
+
+/*app.use (express.static('public'))
+
 
 
 app.get('/', function(req, res){
@@ -28,11 +33,25 @@ app.get('/contact', function(req, res){
 app.post('/', function(req, res){
     console.log(req.body)
     res.send('Thank you!')
+})*/ 
+
+
+
+app.use('/about', function(req, res, next){
+    console.log(req.originalUrl)
+    res.redirect('http://google.com')
+    next()
 })
 
+app.get('/instructor', function(req,res){
+    res.send('<h1>Instructor Dashbord </h1>')
+})
 
+app.use('/student', require('./routes/student.js'))
 
-app.listen(8000, function(){
-    console.log('server started on port http://localhost8000')
+app.use('/blog', require('./routes/blog.js')) 
+
+app.listen(8080, function(){
+    console.log('server started on port http://localhost8080')
     
 })
