@@ -1,0 +1,34 @@
+ *{
+        margin:  0px 0px;
+        border: 0px;
+        padding: 0px;
+        font-family: apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    }
+.fixed-top{
+    background-color: #8D71B4;
+}
+.nav-account{
+       padding: 10px;
+}
+
+
+.jumbotron {
+    background:  url(./images/pancake.jpg) no-repeat left top;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .cards{
+    margin: 10px 45px;
+}
+
+
+
+
+
+.footer {
+    background-color:white;
+    padding: 1px;
+    justify-content: center;
+}
+

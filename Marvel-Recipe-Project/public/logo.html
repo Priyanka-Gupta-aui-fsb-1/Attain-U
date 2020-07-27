@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel ="stylesheet" type="text/css" href="/logo.css">
+    <link href ="https://fonts.googleapis.com/css?family=flamenco" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="row clearfix">
+                <img src="images/logo3.jpg" class="logo">
+                <ul class="main-nav" animated slideInDown id="check-class">
+                    <li action="/aboutus"><a href="./aboutus.html">ABOUT US</a></li>
+                    <li action="/articles"><a href="./articles.html">ARTICLES</a></li>
+                    <li><a href="">LIST OF RECIPES</a></li>
+                    <li action="/account" ><a href='./account.html'>REGISTER</a></li>
+
+                </ul>
+                 <a href="#" class="mobile-icon" onclick="slideshow()"> <i class="fa fa-bars"></i></a>
+            </div>
+      
+        </nav>
+        <div class="main-content-header">
+        <h1>WELCOME TO <span class="colorchange">MARVEL RECIEPS</span>.<br>SHARE YOUR RECIPES HERE</h1>
+        <a href='./secondarypage.html' class = "btn btn-full"> show more</a>
+
+        </div>
+    </header>
+
+    <script type="text/javascript">
+         function slideshow(){
+             var x = document.getElementById('check-class');
+             if(x.style.display === "none"){
+                 x.style.display="block";
+             }else{
+                 x.style.display="none"
+             }
+         }
+
+    </script>
+
+<script>
+
+    function pageRedirect() {
+   window.location.href="/"
+  };
+
+
+</script>
+    
+</body>
+</html>

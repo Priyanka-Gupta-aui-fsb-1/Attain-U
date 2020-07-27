@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>log in</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    
+    
+   <style>
+
+
+.form-login {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: auto;
+}
+.form-login .checkbox {
+  font-weight: 400;
+}
+.form-login .form-control {
+  position: relative;
+  box-sizing: border-box;
+  height: auto;
+  padding: 10px;
+  font-size: 16px;
+}
+.form-login .form-control:focus {
+  z-index: 2;
+}
+.form-login input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.form-login input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+
+        .form-signup {
+          width: 100%;
+          max-width: 330px;
+          padding: 15px;
+          margin: auto;
+        }
+        .form-signup.checkbox {
+          font-weight: 400;
+        }
+        .form-signup.form-control {
+          position: relative;
+          box-sizing: border-box;
+          height: auto;
+          padding: 10px;
+          font-size: 16px;
+        }
+        .form-signup.form-control:focus {
+          z-index: 2;
+        }
+        .form-signup input[type="name"] {
+          margin-bottom: -1px;
+          border-bottom-right-radius: 0;
+          border-bottom-left-radius: 0;
+        }
+        .form-signup input[type="email"] {
+          margin-bottom: -1px;
+          border-bottom-right-radius: 0;
+          border-bottom-left-radius: 0;
+        }
+        .form-signup input[type="password"] {
+          margin-bottom: 10px;
+          border-top-left-radius: 0;
+          border-top-right-radius: 0;
+        }
+
+
+.navbar{
+    background-color:grey;
+}
+
+
+</style>
+
+</head>
+
+<body>
+<nav class="navbar">
+  <h5 class="text-white h4">Marvel Recipes</h5>
+</nav>
+<div class="container" id="container-main">
+  <div id ="logindiv">
+   <form id="form-login" action="/login" method="Post" >
+        <h4>Please log in</h4>
+        <label for="form-loginEmail" class="sr-only">Email address</label>
+        <input type="email" id="form-loginEmail" name="formsignupEmail" class="form-control" placeholder="Email address" required autofocus>
+        <label for="form-loginPassword" class="sr-only ">Password</label>
+        <input type="password" id="form-loginPassword" name="formsignuppassword"class="form-control" placeholder="Password" required>
+        
+        <div class="checkbox mb-3">
+            <label>
+              <input type="checkbox" value="remember-me"> Rememberme
+            </label>
+          
+          </div>
+        <button class="btn-lg btn-primary btn-block" type="submit">Submit</button>
+        New user<a href="#">Sign up &raquo;</a>
+    </form>
+  </div>
+
+   <div class="container" id="signupdiv">
+    <form id = "form-signup" action="/signup" method="Post">
+            <h4>Please create an account</h4>
+            <div class="form-group">
+                <label for="form-signupName">Name</label>
+                <input type="name" class="form-control" id="form-signupName" name="formsignupName" aria-describedby="name">
+                
+              </div>
+            <div class="form-group">
+              <label for="form-signupNameEmail">Email address</label>
+              <input type="email" class="form-control" id="form-signupEmail" name="formsignupEmail" aria-describedby="emailHelp">
+              
+            </div>
+            <div class="form-group">
+              <label for="form-signupNamePassword">Password</label>
+              <input type="password" class="form-control" id="form-signuppassword" name="formsignuppassword" class="form-signuppassword">
+            </div>
+            <div class="form-group">
+                <label for="form-signupNameConfirmPassword">ConfirmPassword</label>
+                <input type="password" class="form-control" id="form-signupconfirm" name="formsignupconfirm" class="form-signupconfirm">
+              </div>
+              <button class="btn btn-lg btn-primary btn-block" type="submit">Submit</button>
+              Already have an account? <a href="#">log in &raquo; </a>
+     </form>
+   </div>
+</div>
+
+     <hr class="mt-2">
+
+      <footer class="container pb-1">
+        
+          <p class ="float-center">&copy; 2020 Marvel, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+      </footer> 
+    
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+<script>
+  $(document).ready(function(){
+  $('#signupdiv').hide();
+
+  $('#signupdiv a').on('click', function(e){
+    e.preventDefault();
+    $('#signupdiv').hide();
+    $('#logindiv').show();
+
+  });
+  $('#logindiv a').on('click', function(e){
+    e.preventDefault();
+    $('#signupdiv').show();
+    $('#logindiv').hide();
+
+  });
+
+  $("bt-lg").submit(function(){
+  alert("Submitted");
+});
+  
+
+ $('#form-signup').on('submit', function(event){
+   event.preventDefault();
+   formData = {};
+   //formData.classname =   $('#Id').val();  // IDs are used for jquery and classname used for backend
+    formData.formsignupName= $('#form-signupName').val();
+   formData.formsignupEmail = $('#form-signupEmail').val();
+   formData.formsignuppassword = $('#form-signuppassword').val();
+    formData.formsignupconfirm = $('#form-signupconfirm').val();
+  
+    console.log(formData);
+    
+    fetch("/signup",{
+     method: "POST",
+     headers: {'Content-Type': 'application/json'},
+     body: JSON.stringify(formData)
+    }).then(res => res.json())
+   .then(data => {
+      $('#formsignupName').val('');
+      $('#formsignupEmail').val('');
+     if (data.success)
+      $('#container-main').prepend(`<div class="alert alert-success mt-3" role="alert">
+                                    ${data.message}
+                                    </div>`);
+  
+                                    else
+      $('#container-main').prepend(`<div class="alert alert-danger mt-3" role="alert">
+                                    ${data.message}
+                                     </div>`);
+    })
+  });
+
+    $('#form-login').on('submit', function(e){
+    e.preventDefault();
+    formData = {};
+    //formData.formsignupEmail = $('#form-loginEmail').val();
+    //formData.formsignuppassword = $('#form-loginPassword').val();
+  
+    console.log(formData);
+    fetch("/login",{
+     method: "POST",
+     headers: {'Content-Type': 'application/json'},
+     body: JSON.stringify(formData)
+   }).then(res => res.json())
+   .then(data => {
+     if (data.success){
+       localStorage.setItem('name',data.data)
+      window.location.href="/";}
+     else 
+      $('#container-main').prepend(`<div class="alert-danger mt-3" role="alert">
+                               ${result.message}
+         //                        </div`);
+   })
+
+    });
+  
+  });
+
+
+
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,170 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+    header{
+     background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('images/thali.jpg');
+     background-size: cover;
+     background-color: no-repeat;
+     background-position: center;
+     height: 100vh;
+}
+
+.row{
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+.logo{
+    height: 120px;
+    width: auto;
+    float: left;
+    margin-top: 20px;
+
+}
+
+.main-nav{
+    float: right;
+    margin-top: 60px;
+
+}
+
+.main-nav li{
+    display: inline-block;
+    list-style: none;
+    margin-left: 40px;
+
+
+}
+
+.main-nav li a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    font-weight: 100;
+    padding: 5px 0px;
+    
+
+}
+
+.main-nav li a:hover{
+    border-bottom: solid#bf55ec;
+}
+
+body{
+    font-size: 20px;
+    overflow-x: hidden;
+    color: white;
+    font-family: 'flamenco', cursive;
+}
+
+.clearfix::after{
+    content: ".";
+    visibility: hidden;
+    display: block;
+    height: 0px;
+    clear: both;
+}
+
+.main-content-header{
+    width:1180px;
+    position: absolute;
+    top:50%;
+   
+
+}
+
+h1{
+    color: white;
+    font-size: 240%; 
+    letter-spacing: 3px;
+    word-spacing: 5px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: lighter;
+
+}
+
+.btn{
+    display: inline-block;
+    padding: 10px,30px;
+    font-weight: lighter;
+    text-transform: uppercase;
+    border-radius: 200px;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+
+}
+
+.btn-full:hover{
+    background-color: white;
+}
+
+.btn-full{
+    background-color: transparent;
+    color: #bf55ec;
+    margin-right: 15px;
+    border:  1px solid #bf55ec;
+}
+
+.btn-nav{
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+}
+
+.colorchange{
+    animation: colorchangemarvel 1s infinite;
+}
+
+.mobile-icon{display: none;}
+
+@keyframes colorchangemarvel{
+    0%{color: red;}
+    25%{color: #bf55ec;}
+    50%{color: white;}
+    100%{color: #bf55ec;}
+}
+
+@media only screen and (max-width: 1180px){
+    .main-content-header{
+        width: 100%;
+        padding: 0px 2%;
+    }
+}
+
+@media only screen and (max-width: 998px){
+    h1{font-size: 200%;}
+}
+
+@media only screen and (max-width: 768px){
+    h1{font-size: 180%;}
+
+    .main-nav{display: none;}
+    .mobile-icon{
+        color: white;
+        display: inline-block;
+        margin-top: 30px;
+        margin-right: 20px;
+    }
+
+    .main-nav{
+        float: left;
+    }
+    .main-nav li{ 
+        display: block;
+        margin-top: 10px;
+    }
+
+}
+
+@media only screen and (max-width: 48px){
+    .btn-full{
+        margin-bottom: 20px;
+    }
+
+    h1{font-size: 160%;}
+
+}
